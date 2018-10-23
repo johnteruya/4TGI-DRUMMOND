@@ -12,7 +12,7 @@ public class InfraConexao {
 	   public InfraConexao() throws Exception{			       	    	   
 	    	   Class.forName("oracle.jdbc.OracleDriver");
 			   String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			   con = DriverManager.getConnection(url,"sys as sysdba",""); // INFORMAR SENHA DO BANCO!!!
+			   con = DriverManager.getConnection(url,"sys as sysdba","root"); // INFORMAR SENHA DO BANCO!!!
 	   }	  
 	   
 	   public void close() {			
