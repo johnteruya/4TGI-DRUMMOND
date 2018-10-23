@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="cbFlyout Plugin">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bem-Vindo ao OKBANK!</title>
+        <title>OK BANK</title>
 		
 		    <!-- Custom -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -23,8 +23,6 @@
         <div id="left-flyout-nav" class="layout-left-flyout visible-sm"></div>
 		<div class="layout-right-content">
 		  <header class="the-header">
-		  
-		  
 		    <div class="navbar container">
 		      
 		      <!-- Trigger -->
@@ -42,22 +40,18 @@
 		        <a href="ApresIndex.jsp">HOME</a>
 		        </li>
 				  
-			        <li class="dropdown">
-			       		<a>CADASTRO<b class="caret"></b></a>
-					        <ul class="subnav">
-					              <li><a href="/Cadastro/cadastro.jsp">INSERIR NOVO CADASTRO</a></li>
-					              <li><a href="/Cadastro/NegCadastrados">BUSCAR CADASTRADOS</a></li>
-					        </ul>
-			        </li>
+		        <li class="dropdown">
+		        <a href="cadastro.jsp">CADASTRO</a>
+		        </li>
 				  
 				  
 				<li class="dropdown">
-		        <a href="/contaCorrente/menu.jsp">CONTA CORRENTE</a>
+		        <a href="conta.jsp">CONTA CORRENTE</a>
 		        </li>
 				
 				
 				<li class="dropdown">
-		        <a href="#">CARTÃO</a>
+		        <a href="card.jsp">CARTÃO</a>
 		        </li>
 				
 
@@ -67,11 +61,11 @@
 				 
 				
 				<li class="dropdown">
-		        <a href="#">DEVEDORES</a>
+		        <a href="devedores.jsp">DEVEDORES</a>
 		        </li>
 				
 		        <li class="dropdown">
-		        <a>CONTABILIDADE<b class="caret"></b></a>
+		        <a href="ApresLançamento.jsp">CONTABILIDADE<b class="caret"></b></a>
 		        <ul class="subnav">
 		              <li><a href="ApresLancamento.jsp">LANÇAMENTOS</a></li>
 		              <li><a href="ApresContabil.jsp">PLANO CONTÁBIL</a></li>
@@ -94,7 +88,7 @@
 		<main class="container">
 		<div class="container" align="center">
 		
-		<img src="images/ok.png" alt="OKBANK" style="width:35%;"></a>
+		<img src="images/ok.png" alt="OKBANK"></a>
 		
 		</div> 
 		</main>   
