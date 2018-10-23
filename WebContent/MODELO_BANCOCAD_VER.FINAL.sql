@@ -1,8 +1,8 @@
-﻿# 4º TGI-DRUMMOND
-Trabalho de Integração de Grupo - Simulação de um Sistema Bancário.
+SistemaCadastro_VER.5.2select * from Cadastro;
 
-## Banco de Dados - Oracle SQL
-### Banco referente ao Cadastro:
+drop table Cadastro;
+
+drop sequence codCliente;
 
 CREATE TABLE Cadastro(
 	codCliente number(5) PRIMARY KEY,
@@ -25,14 +25,6 @@ CREATE TABLE Cadastro(
 	profissao varchar2 (30) NOT NULL,
 	renda number(8) NOT NULL
 );
-
-#### Comandos de Interações Banco:
-
-select * from Cadastro;
-
-drop table Cadastro;
-
-drop sequence codCliente;
 
 CREATE SEQUENCE codCliente
 START WITH 1
