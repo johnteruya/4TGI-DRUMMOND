@@ -26,6 +26,12 @@ CREATE TABLE Cadastro(
 	renda number(8) NOT NULL
 );
 
+CREATE SEQUENCE codCliente
+START WITH 1
+INCREMENT BY 1
+NOCACHE
+NOCYCLE;
+
 #### Comandos de Interações Banco:
 
 select * from Cadastro;
@@ -33,12 +39,6 @@ select * from Cadastro;
 drop table Cadastro;
 
 drop sequence codCliente;
-
-CREATE SEQUENCE codCliente
-START WITH 1
-INCREMENT BY 1
-NOCACHE
-NOCYCLE;
 
 ### Banco referente a Taxas:
 
@@ -49,13 +49,16 @@ valorTaxa NUMBER(3,2) NOT NULL,
 dataVigencia DATE
 );
 
-#### Comandos de Interações Banco:
-
 INSERT INTO taxas VALUES ( 500, 'EMPRESTIMO - JUROS CONTRATO', 3.5, '21-11-2017');
+
 INSERT INTO taxas VALUES ( 600, 'EMPRESTIMO - JUROS MORA', 2.3, '21-11-2017');
+
 INSERT INTO taxas VALUES ( 700, 'EMPRESTIMO - JUROS ATRASO', 1.5, '21-11-2017');
 
+#### Comandos de Interações Banco:
+
 ALTER TABLE taxas MODIFY dataVigencia VARCHAR2(10) NOT NULL;
+
 ALTER TABLE taxas MODIFY dataVigencia DATE;
 
 DELETE FROM Taxas
